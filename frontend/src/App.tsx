@@ -16,6 +16,7 @@ const GITHUB_USERNAME = "ATKKepa";
 const LINKEDIN_USERNAME = "eetupurhonen";
 const GITHUB_URL = `https://github.com/${GITHUB_USERNAME}`;
 const LINKEDIN_URL = `https://www.linkedin.com/in/${LINKEDIN_USERNAME}`;
+const PORTFOLIO_REPO_URL = "https://github.com/ATKKepa/eetu-portfolio";
 
 type Copy = {
   nav: {
@@ -29,6 +30,30 @@ type Copy = {
 
 const projectData: Record<Locale, Project[]> = {
   fi: [
+    {
+      title: "taskon-react-flask",
+      description:
+        "Täysin oma fullstack-tuottavuusratkaisu: Flask-API, React + Mantine -UI, tiedostogalleria ja drag & drop -kanban yhdistettynä SQLiteen.",
+      highlights: [
+        "Tuotantovalmiit käyttökokemukset Mantinen komponenteilla, optimistiset päivitykset ja dnd-kitillä toteutetut laudat",
+        "Flask-taustapalvelu, jossa on migraatiot, idempotentit tiedostokäsittelyt ja checksum-pohjainen duplikaattien tunnistus",
+        "Jaettu kontrakti frontin ja backin välillä (api.ts) sekä README, joka kertoo asetukset ja julkaisut"
+      ],
+      tags: ["React", "Mantine", "Flask", "SQLite", "dnd-kit"],
+      link: "https://github.com/ATKKepa/taskon-react-flask",
+    },
+    {
+      title: "Portfolio 2025",
+      description:
+        "Tämä sivusto: kaksikielinen, tumma/vaalea tila ja animaatiot, joilla esittelen osaamiseni rekrytiimeille.",
+      highlights: [
+        "Rakensin i18n-vaihdon, teemanhallinnan ja CTA-linkit samaan kevyeen tilahallintaan",
+        "Hero-, projekti- ja kokemusosiot viimeistelty Tailwind + Framer Motion -mikrointeraktioilla",
+        "Komponenttipohja (Navbar, osiot, kortit), jota voi laajentaa uusiin caseihin ilman kopiointia"
+      ],
+      tags: ["React", "TypeScript", "Vite", "Tailwind", "Framer Motion", "i18n"],
+      link: PORTFOLIO_REPO_URL,
+    },
     {
       title: "Flutter_demo",
       description:
@@ -53,20 +78,32 @@ const projectData: Record<Locale, Project[]> = {
       tags: ["Next.js", "TypeScript", "Prisma", "Tailwind", "Framer Motion"],
       link: "https://github.com/ATKKepa/next_mini",
     },
+  ],
+  en: [
     {
       title: "taskon-react-flask",
       description:
-        "Täysin oma fullstack-tuottavuusratkaisu: Flask-API, React + Mantine -UI, tiedostogalleria ja drag & drop -kanban yhdistettynä SQLiteen.",
+        "End-to-end productivity suite I own fully: Flask API, React + Mantine UI, file gallery, notes, and drag & drop kanban backed by SQLite.",
       highlights: [
-        "Tuotantovalmiit käyttökokemukset Mantinen komponenteilla, optimistiset päivitykset ja dnd-kitillä toteutetut laudat",
-        "Flask-taustapalvelu, jossa on migraatiot, idempotentit tiedostokäsittelyt ja checksum-pohjainen duplikaattien tunnistus",
-        "Jaettu kontrakti frontin ja backin välillä (api.ts) sekä README, joka kertoo asetukset ja julkaisut"
+        "Production-grade UX with Mantine, smooth dnd-kit boards, optimistic updates and thoughtful empty states",
+        "Flask backend with migrations, idempotent file handling, checksum de-duplication and tuned SQL queries",
+        "Shared api.ts contracts, typed React components and a README documenting setup, API and deployment"
       ],
       tags: ["React", "Mantine", "Flask", "SQLite", "dnd-kit"],
       link: "https://github.com/ATKKepa/taskon-react-flask",
     },
-  ],
-  en: [
+    {
+      title: "Portfolio 2025",
+      description:
+        "This very site: bilingual, theme-aware and animation-heavy so recruiters instantly see how I build products.",
+      highlights: [
+        "Implemented language switching, theme state and CTA routing on a lightweight shared state layer",
+        "Hero, projects and experience sections polished with Tailwind + Framer Motion micro-interactions",
+        "Reusable component system (Navbar, sections, cards) that can stretch to future case studies without duplication"
+      ],
+      tags: ["React", "TypeScript", "Vite", "Tailwind", "Framer Motion", "i18n"],
+      link: PORTFOLIO_REPO_URL,
+    },
     {
       title: "Flutter_demo",
       description:
@@ -90,18 +127,6 @@ const projectData: Record<Locale, Project[]> = {
       ],
       tags: ["Next.js", "TypeScript", "Prisma", "Tailwind", "Framer Motion"],
       link: "https://github.com/ATKKepa/next_mini",
-    },
-    {
-      title: "taskon-react-flask",
-      description:
-        "End-to-end productivity suite I own fully: Flask API, React + Mantine UI, file gallery, notes, and drag & drop kanban backed by SQLite.",
-      highlights: [
-        "Production-grade UX with Mantine, smooth dnd-kit boards, optimistic updates and thoughtful empty states",
-        "Flask backend with migrations, idempotent file handling, checksum de-duplication and tuned SQL queries",
-        "Shared api.ts contracts, typed React components and a README documenting setup, API and deployment"
-      ],
-      tags: ["React", "Mantine", "Flask", "SQLite", "dnd-kit"],
-      link: "https://github.com/ATKKepa/taskon-react-flask",
     },
   ],
 };
@@ -135,8 +160,8 @@ const copy: Record<Locale, Copy> = {
       title: "Tuon designin, datan ja tuotekehityksen yhteen",
       description:
         "Jokainen kokonaisuus on rakennettu tuotantovalmiiksi: mittarointi, CI/CD ja dokumentaatio sisältyvät pakettiin.",
-      badgeLabel: "Toteutus",
-      ctaLabel: "Tutustu projektiin →",
+  badgeLabel: "Projektin ydin",
+  ctaLabel: "Avaa repo →",
       projects: projectData.fi,
     },
     experience: {
@@ -243,8 +268,8 @@ const copy: Record<Locale, Copy> = {
       title: "Blending design, data and product delivery",
       description:
         "Every engagement ships production-ready: instrumentation, CI/CD and documentation included.",
-      badgeLabel: "Case study",
-      ctaLabel: "View case →",
+  badgeLabel: "Build focus",
+  ctaLabel: "Open repo →",
       projects: projectData.en,
     },
     experience: {
@@ -268,7 +293,7 @@ const copy: Record<Locale, Copy> = {
           tech: ["React", "Vite", "Mantine", "Flask", "REST", "Cosmos DB", "Azure OpenAI", "GitHub Actions"],
           readiness: "Owns CI/CD and releases",
           feedback: {
-            label: "Employer feedback",
+            label: "Management's feedback",
             quote: "Eetu demonstrated strong dedication, initiative and collaboration throughout the internship.",
           },
         },
@@ -286,7 +311,7 @@ const copy: Record<Locale, Copy> = {
           ],
           tech: ["Kubernetes", "Linux", "Windows", "Lua", "React", "Svelte", "TypeScript", "MariaDB", "MySQL", "GitHub"],
           feedback: {
-            label: "Employer feedback",
+            label: "Management's feedback",
             quote: "Eetu handled infra and web tasks carefully, asked for feedback and kept timelines on track.",
           },
         },
