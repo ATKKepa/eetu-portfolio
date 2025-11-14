@@ -72,6 +72,8 @@ export default function ProjectCard({ project, index, badgeLabel, ctaLabel }: Pr
       {project.link && (
         <motion.a
           href={project.link}
+          target="_blank"
+          rel="noreferrer noopener"
           className="mt-6 inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-200"
           whileHover={{ x: 4 }}
         >

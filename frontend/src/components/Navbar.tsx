@@ -119,6 +119,8 @@ export default function Navbar({
               <a
                 key={social.href}
                 href={social.href}
+                target="_blank"
+                rel="noreferrer noopener"
                 className="rounded-full border border-slate-200/70 px-3 py-1 text-slate-600 transition hover:border-slate-400 hover:text-slate-900 dark:border-white/15 dark:text-white/70 dark:hover:border-white/40 dark:hover:text-white"
               >
                 {social.label}

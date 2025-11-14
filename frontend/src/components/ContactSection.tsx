@@ -143,6 +143,8 @@ export default function ContactSection({ content }: ContactSectionProps) {
             <motion.a
               key={social.label}
               href={social.href}
+              target="_blank"
+              rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 px-4 py-2 text-sm text-slate-700 transition hover:border-slate-400 dark:border-white/20 dark:text-white"
               whileHover={{ y: -2 }}
             >
