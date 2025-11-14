@@ -21,7 +21,7 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
       id="projects"
       className="relative mx-auto max-w-6xl px-6 py-28"
     >
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent dark:via-[#181B1E]/40" />
 
       <motion.div
         className="mx-auto max-w-3xl text-center"
@@ -29,13 +29,13 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <p className="text-sm uppercase tracking-[0.3em] text-indigo-500 dark:text-indigo-200">
+        <p className="text-sm uppercase tracking-[0.3em] text-[#475c71] dark:text-[#D98E62]">
           {content.eyebrow}
         </p>
-        <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
+        <h2 className="mt-4 text-3xl font-bold text-[#1f2a33] md:text-4xl dark:text-[#F2F4F6]">
           {content.title}
         </h2>
-        <p className="mt-4 text-base text-slate-600 dark:text-white/70">
+        <p className="mt-4 text-base text-[#43576a] dark:text-[#A8B0B7]">
           {content.description}
         </p>
       </motion.div>

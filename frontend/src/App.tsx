@@ -141,17 +141,17 @@ const copy: Record<Locale, Copy> = {
       ],
     },
     hero: {
-      badge: "Viimeistelty fullstack-työ",
+      badge: "Viimeistelty fullstack",
   availability: "Avoin uusille mahdollisuuksille · Etsin opinnäytetyöpaikkaa",
       headline: "Hei, olen Eetu —\nFullstack-tekijä.",
       description:
         "Rakennan modernia ja viimeisteltyä frontti- ja backend-kehitystä Reactilla, TypeScriptillä ja JVM-ympäristössä. Yhdistän huolitellun käyttöliittymän, sujuvat animaatiot ja tuotantokelpoisen arkkitehtuurin — ja haen parhaillaan uutta tiimiä, jossa voin kasvattaa osaamistani.",
-      primaryCta: "Katso viimeisimmät projektit",
+      primaryCta: "Katso viimeisimmät projektini",
       secondaryCta: "Ota yhteyttä",
       stats: [
   { label: "Vuotta käytännön kehitystä", value: "1" },
   { label: "Omalla ajalla julkaistua projektia", value: "6" },
-        { label: "Työhakutila", value: "Avoin nyt" },
+        { label: "Työtilanne", value: "Etsinnässä" },
       ],
       scrollHint: "Scrollaa ja tutustu",
     },
@@ -259,7 +259,7 @@ const copy: Record<Locale, Copy> = {
       stats: [
         { label: "Years in production", value: "1" },
         { label: "Personal launches", value: "6" },
-        { label: "Availability", value: "Open now" },
+        { label: "Work status", value: "Looking" },
       ],
       scrollHint: "Scroll to explore",
     },
@@ -442,8 +442,8 @@ function App() {
     <div
       className={`min-h-screen transition-colors duration-300 ${
         theme === "dark"
-          ? "bg-slate-950 text-slate-100"
-          : "bg-slate-50 text-slate-900"
+          ? "bg-gradient-to-b from-[#0F1113] via-[#181B1E] to-[#0F1113] text-[#F2F4F6]"
+          : "bg-gradient-to-b from-[#f8f6f2] via-[#f2ebe1] to-[#f9f5ee] text-[#2B3947]"
       }`}
     >
       <Navbar

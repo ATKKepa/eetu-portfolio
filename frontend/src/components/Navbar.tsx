@@ -34,7 +34,7 @@ export default function Navbar({
   return (
     <header className="sticky top-0 z-20 w-full px-6 py-6">
       <motion.nav
-        className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-slate-200/70 bg-white/80 px-6 py-3 text-slate-900 shadow-[0_20px_60px_rgba(2,6,23,0.08)] backdrop-blur dark:border-white/10 dark:bg-slate-950/70 dark:text-white dark:shadow-[0_20px_60px_rgba(2,6,23,0.55)]"
+        className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-slate-200/70 bg-white/80 px-6 py-3 text-[#3C5468] shadow-[0_20px_60px_rgba(2,6,23,0.08)] backdrop-blur dark:border-[#2C3237] dark:bg-[#181B1E]/85 dark:text-[#F2F4F6] dark:shadow-[0_18px_60px_rgba(0,0,0,0.5)]"
         initial={{ opacity: 0, y: -12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -43,12 +43,12 @@ export default function Navbar({
           Eetu Purhonen
         </a>
 
-        <ul className="hidden items-center gap-6 text-sm text-slate-500 dark:text-white/70 sm:flex">
+        <ul className="hidden items-center gap-6 text-sm text-[#56758E] dark:text-[#A8B0B7] sm:flex">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="transition-colors hover:text-slate-900 dark:hover:text-white"
+                className="transition-colors hover:text-white"
               >
                 {link.label}
               </a>
@@ -57,7 +57,7 @@ export default function Navbar({
         </ul>
 
         <div className="flex items-center gap-3">
-          <div className="flex rounded-full border border-slate-200/80 bg-white/80 p-1 text-xs font-semibold text-slate-500 dark:border-white/15 dark:bg-white/5 dark:text-white/70">
+          <div className="flex rounded-full border border-slate-200/80 bg-white/80 p-1 text-xs font-semibold text-[#56758E] dark:border-[#2C3237] dark:bg-[#202428] dark:text-[#A8B0B7]">
             {languageButtons.map(({ value, label }) => (
               <button
                 key={value}
@@ -66,8 +66,8 @@ export default function Navbar({
                 onClick={() => onLanguageChange(value)}
                 className={`rounded-full px-3 py-1 transition ${
                   language === value
-                    ? "bg-slate-900 text-white dark:bg-white/80 dark:text-slate-900"
-                    : "hover:text-slate-900 dark:hover:text-white"
+                    ? "bg-[#3C5468] text-white dark:bg-[#D98E62] dark:text-[#0F1113]"
+                    : "hover:text-[#3C5468] dark:hover:text-white"
                 }`}
               >
                 {label}
@@ -79,7 +79,7 @@ export default function Navbar({
             type="button"
             onClick={onThemeToggle}
             aria-label={themeToggleLabel}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200/70 bg-white/80 text-slate-700 shadow-sm transition hover:border-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200/70 bg-white/80 text-[#3C5468] shadow-sm transition hover:border-[#56758E] dark:border-[#2C3237] dark:bg-[#202428]/90 dark:text-[#F2F4F6] dark:hover:border-[#D98E62]/80"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -121,7 +121,7 @@ export default function Navbar({
                 href={social.href}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="rounded-full border border-slate-200/70 px-3 py-1 text-slate-600 transition hover:border-slate-400 hover:text-slate-900 dark:border-white/15 dark:text-white/70 dark:hover:border-white/40 dark:hover:text-white"
+                className="rounded-full border border-slate-200/70 px-3 py-1 text-[#56758E] transition hover:border-[#D98E62]/70 hover:text-[#3C5468] dark:border-[#2C3237] dark:text-[#A8B0B7] dark:hover:border-[#D98E62]/70 dark:hover:text-white"
               >
                 {social.label}
               </a>
