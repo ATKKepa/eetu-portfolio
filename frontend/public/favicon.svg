@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-15.652753,-1.443162)">
+        <path d="M491.785,138.377L491.785,364.509C491.785,426.912 441.122,477.575 378.719,477.575L152.587,477.575C90.184,477.575 39.52,426.912 39.52,364.509L39.52,138.377C39.52,75.974 90.184,25.311 152.587,25.311L378.719,25.311C441.122,25.311 491.785,75.974 491.785,138.377Z"/>
+    </g>
+    <g transform="matrix(1,0,0,1,44.595216,-12.049881)">
+        <g transform="matrix(445.718174,0,0,445.718174,309.108256,419.182948)">
+        </g>
+        <text x="80.373px" y="419.183px" style="font-family:'MaiandraGD-Regular', 'Maiandra GD', sans-serif;font-size:445.718px;fill:rgb(255,128,77);stroke:white;stroke-width:1px;">E</text>
+    </g>
+</svg>
