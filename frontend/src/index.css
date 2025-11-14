@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color-scheme: light dark;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Inter", "Sofia Sans", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", sans-serif;
+	background: #f8fafc;
+	color: #0f172a;
+	transition: background 0.4s ease, color 0.4s ease;
+}
+
+.dark body {
+	background: radial-gradient(circle at top, rgba(79, 70, 229, 0.25), transparent 55%),
+			radial-gradient(circle at 20% 20%, rgba(244, 114, 182, 0.2), transparent 45%),
+			#020617;
+	color: #f8fafc;
+}
+
+#root {
+	min-height: 100vh;
+}
