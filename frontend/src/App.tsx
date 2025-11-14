@@ -141,7 +141,7 @@ const copy: Record<Locale, Copy> = {
     },
     experience: {
       eyebrow: "Kokemus",
-      title: "Pienissä tiimeissä rakennettu tuotantokunto",
+      title: "Pienissä tiimeissä hiottu osaaminen",
       description:
         "Kahden harjoittelun aikana keskityin sekä tekoälyä hyödyntäviin web-sovelluksiin että infraan — näin läheltä koko ketjun suunnittelusta julkaisuun.",
       experiences: [
@@ -158,7 +158,11 @@ const copy: Record<Locale, Copy> = {
             "Osallistuin API-rakenteiden, datamallien ja julkaisuarkkitehtuurin suunnitteluun sekä opin tuotantotason päätöksenteon perusteet"
           ],
           tech: ["React", "Vite", "Mantine", "Flask", "REST", "Cosmos DB", "Azure OpenAI", "GitHub Actions"],
-          readiness: "Valmis siirtymään FastAPIin",
+          readiness: "Vastaan myös CI/CD:stä ja julkaisuista",
+          feedback: {
+            label: "Työnantajan palaute",
+            quote: "Eetu osoitti vahvaa omistautumista, oma-aloitteisuutta ja tiimityökykyä koko harjoittelun ajan.",
+          },
         },
         {
           company: "Peliporukka RP Ry",
@@ -173,6 +177,10 @@ const copy: Record<Locale, Copy> = {
             "Rakensin sisäisiä työkaluja Lua/TypeScriptillä (React/Svelte) MariaDB/MySQL-taustoilla ja standardoin CI/CD:tä GitHubissa"
           ],
           tech: ["Kubernetes", "Linux", "Windows", "Lua", "React", "Svelte", "TypeScript", "MariaDB", "MySQL", "GitHub"],
+          feedback: {
+            label: "Työnantajan palaute",
+            quote: "Eetu hoiti infra- ja web-tehtävät huolellisesti, haki palautetta ja piti aikatauluista kiinni.",
+          },
         },
       ],
     },
@@ -258,7 +266,11 @@ const copy: Record<Locale, Copy> = {
             "Co-led discussions around API structure, data models and deployment, sharpening my production-grade intuition"
           ],
           tech: ["React", "Vite", "Mantine", "Flask", "REST", "Cosmos DB", "Azure OpenAI", "GitHub Actions"],
-          readiness: "Ready for FastAPI",
+          readiness: "Owns CI/CD and releases",
+          feedback: {
+            label: "Employer feedback",
+            quote: "Eetu demonstrated strong dedication, initiative and collaboration throughout the internship.",
+          },
         },
         {
           company: "Peliporukka RP Ry",
@@ -273,6 +285,10 @@ const copy: Record<Locale, Copy> = {
             "Built internal tools in Lua and TypeScript (React/Svelte) backed by MariaDB/MySQL while helping standardize CI/CD"
           ],
           tech: ["Kubernetes", "Linux", "Windows", "Lua", "React", "Svelte", "TypeScript", "MariaDB", "MySQL", "GitHub"],
+          feedback: {
+            label: "Employer feedback",
+            quote: "Eetu handled infra and web tasks carefully, asked for feedback and kept timelines on track.",
+          },
         },
       ],
     },
