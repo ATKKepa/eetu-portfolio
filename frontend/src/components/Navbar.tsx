@@ -40,7 +40,7 @@ export default function Navbar({
         transition={{ duration: 0.6 }}
       >
         <a href="#hero" className="text-sm font-semibold tracking-wide">
-          Eetu.dev
+          Eetu Purhonen
         </a>
 
         <ul className="hidden items-center gap-6 text-sm text-slate-500 dark:text-white/70 sm:flex">
