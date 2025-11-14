@@ -9,6 +9,10 @@ export type ExperienceItem = {
   bullets: string[];
   tech: string[];
   readiness?: string;
+  feedback?: {
+    label: string;
+    quote: string;
+  };
 };
 
 export type ExperienceContent = {
@@ -88,6 +92,15 @@ export default function ExperienceSection({ content }: ExperienceSectionProps) {
                 </li>
               ))}
             </ul>
+
+            {experience.feedback && (
+              <div className="mt-6 rounded-2xl border border-slate-200/70 bg-slate-50/70 p-5 text-sm text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-white/80">
+                <p className="text-xs uppercase tracking-[0.3em] text-indigo-500 dark:text-indigo-200">
+                  {experience.feedback.label}
+                </p>
+                <p className="mt-3 italic leading-relaxed">“{experience.feedback.quote}”</p>
+              </div>
+            )}
 
             <div className="mt-6 flex flex-wrap gap-2">
               {experience.tech.map((tech) => (
