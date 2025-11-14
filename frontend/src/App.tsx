@@ -9,6 +9,13 @@ import type { Project } from "./components/ProjectCard";
 type Locale = "fi" | "en";
 type ThemeMode = "dark" | "light";
 const LANGUAGE_PARAM = "lang";
+const CONTACT_EMAIL = "eetupurhonen8@gmail.com";
+const CONTACT_PHONE_VALUE = "+358505388987";
+const CONTACT_PHONE_DISPLAY = "+358 50 538 8987";
+const GITHUB_USERNAME = "ATKKepa";
+const LINKEDIN_USERNAME = "eetupurhonen";
+const GITHUB_URL = `https://github.com/${GITHUB_USERNAME}`;
+const LINKEDIN_URL = `https://www.linkedin.com/in/${LINKEDIN_USERNAME}`;
 
 type Copy = {
   nav: {
@@ -170,12 +177,34 @@ const copy: Record<Locale, Copy> = {
       ],
     },
     contact: {
-      eyebrow: "Yhteistyö",
-      title: "Onko mielessä uusi tuote, MVP tai modernisointi?",
+      eyebrow: "Puhutaanko töistä?",
+  title: "Etsitkö tiimiin fullstack-tekijää?",
       description:
-        "Autan suunnittelemaan ja toteuttamaan kokonaisuuksia, jotka kestävät tuotantoon. Vastaan mielelläni viestiin saman päivän aikana.",
-      primaryCta: { label: "Lähetä sähköposti", href: "mailto:sahkoposti@esimerkki.com" },
-      secondaryCta: { label: "LinkedIn", href: "https://www.linkedin.com/" },
+        "Jos kaipaat tekijää, joka yhdistää käyttöliittymän, backendin ja CI/CD:n, jutellaan. Olen avoin uusille haasteille ja vastaan saman päivän aikana.",
+      methods: [
+        {
+          label: "Puhelin",
+          value: CONTACT_PHONE_DISPLAY,
+          hint: "Soita tai jätä WhatsApp-viesti; palaan nopeasti",
+          actionLabel: "Soita",
+          href: `tel:${CONTACT_PHONE_VALUE}`,
+        },
+        {
+          label: "Sähköposti",
+          value: CONTACT_EMAIL,
+          hint: "Lähetä sähköposti, vastaan sinulle pian",
+          actionLabel: "Lähetä sähköposti",
+          href: `mailto:${CONTACT_EMAIL}`,
+          copyLabel: "Kopioi osoite",
+          copySuccessLabel: "Kopioitu!",
+          copyValue: CONTACT_EMAIL,
+        },
+      ],
+      socialsLabel: "Kanavat",
+      socials: [
+        { label: "GitHub", username: GITHUB_USERNAME, href: GITHUB_URL },
+        { label: "LinkedIn", username: LINKEDIN_USERNAME, href: LINKEDIN_URL },
+      ],
     },
   },
   en: {
@@ -248,19 +277,41 @@ const copy: Record<Locale, Copy> = {
       ],
     },
     contact: {
-      eyebrow: "Collaboration",
-      title: "Need a new product, MVP or modernization?",
+      eyebrow: "Let’s talk roles",
+  title: "Looking for a full-stack engineer?",
       description:
-        "I help design and deliver solutions that hold up in production. Expect a reply within the same day.",
-      primaryCta: { label: "Send an email", href: "mailto:sahkoposti@esimerkki.com" },
-      secondaryCta: { label: "LinkedIn", href: "https://www.linkedin.com/" },
+        "Looking for someone who can ship UI, APIs and automation as one package? I’m actively open to opportunities and reply within the same day.",
+      methods: [
+        {
+          label: "Phone",
+          value: CONTACT_PHONE_DISPLAY,
+          hint: "Call or drop a WhatsApp message; I respond fast",
+          actionLabel: "Call now",
+          href: `tel:${CONTACT_PHONE_VALUE}`,
+        },
+        {
+          label: "Email",
+          value: CONTACT_EMAIL,
+          hint: "Send an email, I will contact you back shortly",
+          actionLabel: "Write an email",
+          href: `mailto:${CONTACT_EMAIL}`,
+          copyLabel: "Copy address",
+          copySuccessLabel: "Copied!",
+          copyValue: CONTACT_EMAIL,
+        },
+      ],
+      socialsLabel: "Stay connected",
+      socials: [
+        { label: "GitHub", username: GITHUB_USERNAME, href: GITHUB_URL },
+        { label: "LinkedIn", username: LINKEDIN_USERNAME, href: LINKEDIN_URL },
+      ],
     },
   },
 };
 
 const socialLinks: SocialLink[] = [
-  { label: "GitHub", href: "https://github.com/ATKKepa" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/" },
+  { label: "GitHub", href: GITHUB_URL },
+  { label: "LinkedIn", href: LINKEDIN_URL },
 ];
 
 const resolveLocale = (value: string | null | undefined): Locale | null => {
