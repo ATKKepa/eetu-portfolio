@@ -70,13 +70,6 @@ npm run lint     # Run ESLint across the src directory
 - Update the relevant arrays/objects to change wording or add new case studies.
 - Projects are rendered in the order they appear in `projectData[locale]`, so rearrange the array to reorder cards.
 
-## 🎨 Customization Tips
-
-- **Hero portrait**: replace `frontend/src/assets/profile.png` with any PNG/JPG/WebP (≈1500×2000px) to keep the crop crisp.
-- **Theme defaults**: `getInitialTheme()` reads `localStorage` and system preference; adjust there to force dark/light by default.
-- **Contact CTAs**: Update `CONTACT_EMAIL`, `CONTACT_PHONE_*`, GitHub/LinkedIn constants at the top of `App.tsx`.
-- **Animations**: Motion timing is centralized in each component; tweak `transition` props or Framer Motion variants for different feel.
-
 ## 🧪 Quality Checklist
 
 - `npm run lint` – ESLint (React hooks + React Refresh plugins)
