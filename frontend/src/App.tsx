@@ -142,7 +142,7 @@ const copy: Record<Locale, Copy> = {
     },
     hero: {
       badge: "Viimeistelty fullstack-työ",
-      availability: "Avoin uusille mahdollisuuksille",
+  availability: "Avoin uusille mahdollisuuksille · Etsin opinnäytetyöpaikkaa",
       headline: "Hei, olen Eetu —\nFullstack-tekijä.",
       description:
         "Rakennan modernia ja viimeisteltyä frontti- ja backend-kehitystä Reactilla, TypeScriptillä ja JVM-ympäristössä. Yhdistän huolitellun käyttöliittymän, sujuvat animaatiot ja tuotantokelpoisen arkkitehtuurin — ja haen parhaillaan uutta tiimiä, jossa voin kasvattaa osaamistani.",
@@ -250,7 +250,7 @@ const copy: Record<Locale, Copy> = {
     },
     hero: {
       badge: "Polished full-stack work",
-      availability: "Open for new roles",
+  availability: "Open for new roles · Seeking a thesis placement",
       headline: "Hi, I'm Eetu —\na Full-stack Engineer.",
       description:
         "I craft modern frontend and backend solutions with React, TypeScript and the JVM ecosystem. I focus on refined UI, smooth motion and production-ready architecture — and I'm actively looking for a team where I can keep leveling up.",
