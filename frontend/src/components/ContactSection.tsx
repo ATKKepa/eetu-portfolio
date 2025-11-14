@@ -95,7 +95,7 @@ export default function ContactSection({ content }: ContactSectionProps) {
             <p className="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-white/70">
               {method.label}
             </p>
-            <p className="text-2xl font-semibold text-slate-900 dark:text-white">
+            <p className="break-all text-2xl font-semibold text-slate-900 dark:text-white">
               {method.value}
             </p>
             <p className="text-sm text-slate-600 dark:text-white/80">{method.hint}</p>

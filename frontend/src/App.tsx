@@ -218,7 +218,7 @@ const copy: Record<Locale, Copy> = {
         {
           label: "Puhelin",
           value: CONTACT_PHONE_DISPLAY,
-          hint: "Soita tai jätä WhatsApp-viesti; palaan nopeasti",
+          hint: "Soita tai jätä WhatsApp-viesti, vastaan sinulle nopeasti",
           actionLabel: "Soita",
           href: `tel:${CONTACT_PHONE_VALUE}`,
         },
