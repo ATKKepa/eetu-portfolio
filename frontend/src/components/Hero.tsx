@@ -123,7 +123,7 @@ export default function Hero({ content }: HeroProps) {
               {content.primaryCta}
             </motion.a>
             <motion.a
-              href="mailto:sahkoposti@esimerkki.com"
+              href="#contact"
               className="rounded-full border border-slate-300/80 px-8 py-3 text-sm font-semibold text-slate-900 backdrop-blur dark:border-white/15 dark:text-white/90"
               whileHover={{ scale: 1.02, y: -1 }}
               whileTap={{ scale: 0.97 }}
