@@ -112,7 +112,7 @@ const copy: Record<Locale, Copy> = {
       links: [
         { label: "Etusivu", href: "#hero" },
         { label: "Projektit", href: "#projects" },
-        { label: "Yhteys", href: "#contact" },
+  { label: "Ota yhteyttä", href: "#contact" },
       ],
     },
     hero: {
@@ -124,8 +124,8 @@ const copy: Record<Locale, Copy> = {
       primaryCta: "Katso viimeisimmät projektit",
       secondaryCta: "Ota yhteyttä",
       stats: [
-        { label: "Vuotta tuotantotyötä", value: "1" },
-        { label: "Julkaistua projektia", value: "6" },
+  { label: "Vuotta käytännön kehitystä", value: "1" },
+  { label: "Omalla ajalla julkaistua projektia", value: "6" },
         { label: "Työhakutila", value: "Avoin nyt" },
       ],
       scrollHint: "Scrollaa ja tutustu",
